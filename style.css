@@ -1,0 +1,36 @@
+header {
+	background-color: #FFF;
+	color: #0C7DAE;
+	text-align: center;
+	font-size: 36px;
+	font-family: Montserrat;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	text-align: center;
+	justify-items: center;
+	grid-row-gap: 40px;
+}
+
+#title {
+	grid-column: 1 / span 4;
+}
+
+main, body {
+	background-color: #0C7DAE;
+	color: #FFF;
+	text-align: center;
+}
+
+.nav {
+	font-size: 16px;
+	text-align: center;
+	grid-column: span 1;
+	align-items: end;
+}
+
+.about-me {
+	font-family: Helvetica, Montserrat;
+	font-size: 13px;
+	text-align: left;
+}
