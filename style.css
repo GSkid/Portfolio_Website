@@ -2,6 +2,7 @@ body {
 	background-color: #0C7DAE;
 	color: #FFF;
 	margin: 0 auto;
+	
 	z-index: 1;
 }
 
@@ -11,7 +12,7 @@ header {
 	color: #0C7DAE;
 	font-size: 36px;
 	font-family: Montserrat;
-	float: right;
+	margin: 0 auto;
 	position: fixed;
 	width: 100%;
 	z-index: 3;
@@ -24,8 +25,8 @@ header {
 
 header ul {
 	padding-bottom: 15px;
+	margin: 20px auto;
 	text-align: center;
-	margin: 30px auto;
 }
 	
 .nav {
@@ -43,6 +44,10 @@ header ul {
 .about-me {
 	position: relative;
 	top: 225px;
+	left: 50px;
+	margin: 0 auto;
+	width: 50%;
+	min-width: 600px;
 	display: grid;
 	grid-template-columns: repeat(2, 555px);
 }
@@ -80,9 +85,18 @@ header ul {
 }
 
 /* Projects */
+#projects {
+	position: relative;
+	top: 225px;
+	margin-bottom: 200px;
+}
+
 .projects {
 	position: relative;
 	top: 225px;
+	margin: 0 auto;
+	width: 50%;
+	min-width: 600px;
 }
 
 .projects h1 {
@@ -97,6 +111,7 @@ header ul {
 
 .projects p {
 	color: white;
+	text-align: center;
 }
 
 #IAI-report, #arduino {
