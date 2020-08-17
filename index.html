@@ -10,29 +10,43 @@
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   </head>
-<br>
 
 <body>
 <div class="container">	
 
-<header>
-	<h1 id="title">Grant Skidmore</h1>
-	<h2 class="nav"><a href="">Home</a></h2>
-	<h2 class="nav"><a href="#projects">Projects</a></h2>
-	<h2 class="nav"><a href="#resume">Online Resume</a></h2>
-	<h2 class="nav"><a href="#hobbies">Hobbies</a></h2>
-</header>
-<br><br><br>
+	<header>
+		<h1 id="title">Grant Skidmore</h1>
+		<ul>
+			<li class="nav"><a href="">Home</a></li>
+			<li class="nav"><a href="#projects">Projects</a></li>
+			<li class="nav"><a href="#resume">Online Resume</a></li>
+			<li class="nav"><a href="#hobbies">Hobbies</a></li>
+		</ul>
+	</header>
 
-<main>
 	<div class="about-me">
 		<div class="content">
-			<h2 id="about-header">About Grant<h2>
+			<h2 id="about-header">About Grant</h2>
 			<p>Grant is a 22 year-old, aspiring software engineer with a passion for learning and knack for quickly picking up new skills. He currently lives in the California Bay Area and is activley searching for a job. He recently graduated from UC Santa Cruz in June 2020 with a B.S. in Bioengineering, although most of his work was done working with software and electronics. He also enjoys public speaking and found a niche in the university as a student instructor, where (for 3 years) Grant taught the university's largest-ever student-taught class, reaching up to 140 students, which focused primarily on public speaking. That was one of the defining parts of his time at university and a way to express himself in a completely unique way.<br><br>In his free time, Grant enjoys cooking, working on creative projects, exploring new and hidden locations, and golfing. Grant was one of the two captains for the Deep Cliff Golf Course high-school team where he worked and won the championship both years he played. He grew rusty due to the lack of time in school at Santa Cruz but hopes to improve again in the future.<br><br>In terms of physical activities, Grant plays nearly every sport. The extensive list includes the aformentioned golf as well as baseball, basketball, soccer, football, tennis, and skiing (to name a few). In high school, Grant was on both the JV and Varsity baseball teams as a starting 3rd baseman and relief pitcher. However, due to unfortunate injuries his senior year, Grant was unable to play except for a single game. Regardless, it was a great experience to play with existing friends and make new ones in the process.</p>
 		</div>
-		<img src="./bin/Images/ProfessionalPhoto.jpg" id="mech-finals"></img>
+		<div class="image">
+			<img src="./bin/Images/ProfessionalPhoto.jpg" id="pro-image" alt="Grant Skidmore from sophmore year: as professional as it gets."></img>
+			<h4 class="caption" id="grant-caption">Grant Skidmore from sophmore year: as professional as it gets.</h4>
+		</div>
 	</div>
-</main>
+
+	<div class="projects">
+		<h1 id="projects">Projects</h1>
+		<div class="thesis">
+			<h2>1.  Senior Thesis - <a href="./bin/Reports/Intuitive_Auto_Irrigation_Report.pdf" id="IAI-report"><em>Intuitive Auto Irrigation</em></a></h2>
+			<p id="intro">Acknowledging residential irrigation as a significant contributor to unnecessary wastewater, Grant and the Intuitive Auto-Irrigation team devised a 	water-efficient automatic irrigation system that uses an array of sensors and weather forecasting data to determine when to efficiently water plants and minimize water consumption. Through wireless communication, sensor arrays relay information to a central hub that collects environmental data and triggers water delivery when monitored soil is deemed dry and conditions are optimal for irrigation. The goal of the automatic irrigation system is to reduce unnecessary water consumption without sacrificing plant health, effectively leading to a more sustainable method of residential landscaping and gardening practices.<br><br>The Intuitive Auto Irrigation project started as a creative, side adventure in the summer of 2019. Grant initially wanted to learn how to use <a href="https://www.arduino.cc/" id="arduino">Arduino</a> microcontrollers and apply concepts from one of his previous electronics class to something he respected, Nature. However, Grant quickly realized there was a lot more that goes into irrigation systems, especially autonomous versions, than just a simple microcontroller. Especially when trying to learn to be an engineer, Grant wanted the work to live up to professional engineering standards which meant the addition of significant time investment as well. So when the next quarter came around, Grant found the perfect opportunity to revisit this idea in his Senior Capstone Design course. The premise of this course is to have students come up with project ideas and divide into small teams, effectively simulating a coorporate-esque job with the teaching staff as 'company managers'. To his surprise, Grant found a team of 3, highly qualified engineers shortly after sharing his idea. Together forming a squad of 3 bioengineers and 1 electrical engineer, Grant finally had the man power to fulfill the project goals.</p>
+			<div class="image">
+				<img src="./bin/Images/Central_Hub.jpg" id="central-hub" alt="The Intuitive Auto Irrigation Central Hub"></img>
+				<h4 class="caption" id="central-hub-caption">The final design of the Intuitive Auto Irrigation Central Hub sports a 4 push-button interface to control the 2.5" OLED screen.</h4>
+			</div>
+			<p id="high-level">Settled with a team, the Banana Slug engineers worked together with the on-campus, Kresge Co-op Garden to come up with a set of top-down goals to orient the project in the right direction. During the planning stages, the team identified biggest challenges as the wireless communications, sensor arrays, the general central hub state machine, and the user interface. </p>
+		</div>
+	</div>
 
 </div>
 
