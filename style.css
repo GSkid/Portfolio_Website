@@ -1,36 +1,62 @@
+main, body {
+	background-color: #0C7DAE;
+	color: #FFF;
+}
+
+/* HEADER */
 header {
 	background-color: #FFF;
 	color: #0C7DAE;
-	text-align: center;
 	font-size: 36px;
 	font-family: Montserrat;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	text-align: center;
 	justify-items: center;
-	grid-row-gap: 40px;
+	grid-row-gap: 5px;
 }
 
 #title {
 	grid-column: 1 / span 4;
-}
-
-main, body {
-	background-color: #0C7DAE;
-	color: #FFF;
-	text-align: center;
+	padding-top: 20px;
 }
 
 .nav {
 	font-size: 16px;
 	text-align: center;
 	grid-column: span 1;
-	align-items: end;
+	align-self: end;
+	padding-bottom: 15px;
 }
 
+/* ABOUT ME */
 .about-me {
+	display: grid;
+	grid-template-columns: repeat(2, 555px);
+}
+	
+#about-header{
 	font-family: Helvetica, Montserrat;
-	font-size: 13px;
+	font-size: 24px;
 	text-align: left;
+	grid-column: span 2;
+}
+	
+.about-me p{
+	font-family: Helvetica, Montserrat;
+	font-size: 16px;
+	text-align: left;
+	padding-top: 0px;
+	grid-column: span 1;
+}
+
+.content {
+	border: 1px solid white;
+	padding: 10px;
+}
+	
+#mech-finals {
+	width: 500px;
+	grid-column: span 1;
+	justify-self: end;
 }
