@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css" >
+	<link rel="stylesheet" type="text/css" href="style.css">
 	
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
 	<header>
 		<h1 id="title">Grant Skidmore</h1>
 		<ul>
-			<li class="nav"><a href="">Home</a></li>
-			<li class="nav"><a href="#projects">Projects</a></li>
-			<li class="nav"><a href="#resume">Online Resume</a></li>
-			<li class="nav"><a href="#hobbies">Hobbies</a></li>
+			<li class="nav"><a href="" class="link">Home</a></li>
+			<li class="nav"><a href="#projects" class="link">Projects</a></li>
+			<li class="nav"><a href="#resume" class="link">Online Resume</a></li>
+			<li class="nav"><a href="#hobbies" class="link">Hobbies</a></li>
 		</ul>
 	</header>
 
@@ -30,7 +30,7 @@
 		</div>
 		<div class="image">
 			<img src="./bin/Images/ProfessionalPhoto.jpg" id="pro-image" alt="Grant Skidmore from sophmore year: as professional as it gets."></img>
-			<h4 class="caption" id="grant-caption">Grant Skidmore from sophmore year: as professional as it gets.</h4>
+			<h4 class="caption" id="grant-caption">Grant Skidmore from sophmore year: as professional as it gets.<br><br>Unfortunately, this is the only solid, professional looking picture of Grant because it's difficult to convince people to spend their time taking pictures of you. Regardless, it's not a bad picture to have. This specific picture is from UCSC's own SlugMUN conference where Grant served as a Crisis Director for a Model UN debate.</h4>
 		</div>
 	</div>
 	
@@ -40,13 +40,18 @@
 	<div class="projects">
 		<h1>Projects</h1>
 		<div class="thesis">
-			<h2>1.  Senior Thesis - <a href="./bin/Reports/Intuitive_Auto_Irrigation_Report.pdf" id="IAI-report"><em>Intuitive Auto Irrigation</em></a></h2>
-			<p id="intro">Acknowledging residential irrigation as a significant contributor to unnecessary wastewater, Grant and the Intuitive Auto-Irrigation team devised a 	water-efficient automatic irrigation system that uses an array of sensors and weather forecasting data to determine when to efficiently water plants and minimize water consumption. Through wireless communication, sensor arrays relay information to a central hub that collects environmental data and triggers water delivery when monitored soil is deemed dry and conditions are optimal for irrigation. The goal of the automatic irrigation system is to reduce unnecessary water consumption without sacrificing plant health, effectively leading to a more sustainable method of residential landscaping and gardening practices.<br><br>The Intuitive Auto Irrigation project started as a creative, side adventure in the summer of 2019. Grant initially wanted to learn how to use <a href="https://www.arduino.cc/" id="arduino">Arduino</a> microcontrollers and apply concepts from one of his previous electronics class to something he respected, Nature. However, Grant quickly realized there was a lot more that goes into irrigation systems, especially autonomous versions, than just a simple microcontroller. Especially when trying to learn to be an engineer, Grant wanted the work to live up to professional engineering standards which meant the addition of significant time investment as well. So when the next quarter came around, Grant found the perfect opportunity to revisit this idea in his Senior Capstone Design course. The premise of this course is to have students come up with project ideas and divide into small teams, effectively simulating a coorporate-esque job with the teaching staff as 'company managers'. To his surprise, Grant found a team of 3, highly qualified engineers shortly after sharing his idea. Together forming a squad of 3 bioengineers and 1 electrical engineer, Grant finally had the man power to fulfill the project goals.</p>
+			<h2>1.  Senior Thesis - <a href="./bin/Reports/Intuitive_Auto_Irrigation_Report.pdf" class="link"><em>Intuitive Auto Irrigation</em></a></h2>
+			<p id="intro">Acknowledging residential irrigation as a significant contributor to unnecessary wastewater, Grant and the Intuitive Auto-Irrigation team devised a 	water-efficient automatic irrigation system that uses an array of sensors and weather forecasting data to determine when to efficiently water plants and minimize water consumption. Through wireless communication, sensor arrays relay information to a central hub that collects environmental data and triggers water delivery when monitored soil is deemed dry and conditions are optimal for irrigation. The goal of the automatic irrigation system is to reduce unnecessary water consumption without sacrificing plant health, effectively leading to a more sustainable method of residential landscaping and gardening practices.<br><br>The Intuitive Auto Irrigation project started as a creative, side adventure in the summer of 2019. Grant initially wanted to learn how to use <a href="https://www.arduino.cc/" class="link">Arduino</a> microcontrollers and apply concepts from one of his previous electronics class to something he respected, Nature. However, Grant quickly realized there was a lot more that goes into irrigation systems, especially autonomous versions, than just a simple microcontroller. Especially when trying to learn to be an engineer, Grant wanted the work to live up to professional engineering standards which meant the addition of significant time investment as well. So when the next quarter came around, Grant found the perfect opportunity to revisit this idea in his Senior Capstone Design course. The premise of this course is to have students come up with project ideas and divide into small teams, effectively simulating a coorporate-esque job with the teaching staff as 'company managers'. To his surprise, Grant found a team of 3, highly qualified engineers shortly after sharing his idea. Together forming a squad of 3 bioengineers and 1 electrical engineer, Grant finally had the man power to fulfill the project goals.</p>
 			<div class="image">
 				<img src="./bin/Images/Central_Hub.jpg" id="central-hub" alt="The Intuitive Auto Irrigation Central Hub"></img>
-				<h4 class="caption" id="central-hub-caption">The final design of the Intuitive Auto Irrigation Central Hub sports a 4 push-button interface to control the 2.5" OLED screen.</h4>
+				<img src="./bin/Images/SensorArrayAssembly.jpg" id="sensor-array" alt="The Intuitive Auto Irrigation Sensor Array"></img>
+				<h4 class="caption" id="central-hub-caption">On the left, the final design of the Intuitive Auto Irrigation Central Hub sports a 4 push-button interface to control the 2.5" OLED screen. On the right, the final prototype design for the sensor nodes encased them in protoboards for limited water protection. Originally the team planned to 3D print an enclosure for them, but the on-campus 3D printer closed due to the pandemic. The final result still worked surprisingly well.</h4>
 			</div>
-			<p id="high-level">Settled with a team, the Banana Slug engineers worked together with the on-campus, Kresge Co-op Garden to come up with a set of top-down goals to orient the project in the right direction. During the planning stages, the team identified biggest challenges as the wireless communications, sensor arrays, the general central hub state machine, and the user interface. </p>
+			<p id="high-level">Settled with a team, the Banana Slug engineers worked together with the on-campus, Kresge Co-op Garden to come up with a set of top-down goals to orient the project in the right direction. During the planning stages, the team identified biggest challenges as the wireless communications, sensor arrays, the general central hub state machine, and the user interface. Starting with the wireless communications and the sensor arrays, these were considered large project milestones that significantly altered the state of the project once they were complete. Of these four major challenges, Grant worked primarily on the wireless comms and the central hub state machine while also helping out with the user interface.<br><br>To get the wireless communications working, Grant started out with getting two Arduinos communicating first. He initially struggled with figuring out what each pin did on the RF24 radio transceiver; but after some messing around, he was able to configure a master and slave network with a simplified version of the final communication protocol. To be clear, Grant had the help of the <a href=" http://tmrh20.github.io/RF24/index.html" class="link">RF24 library</a> authored by TMRh20. This library built the underlying framework in terms of handling the baseline transmission and reception of RF signals between devices. After getting the multi-node system working, Grant moved the central hub (the master node) to a Raspberry Pi Zero W, which was the final microcontroller choice for the central hub. This took some effort and Grant also started working on the central hub state machine at this point, and after a couple weeks of work, the central hub was able to communicate with the sensor network using the wireless radio transceivers. After that, it was just adding features and fine tuning the central hub to get the irrigation network to actually distribute water properly. This took a little bit of extra time because of the need for a multi-driver board to drive latching solenoid valves, but eventually everything worked as intended. The testing performed on the final system logged lots of environmental but the most interesting trends were the soil moisture content and light level.<br><br>Shown below are the data trends for soil moisture content and light levels for both sensors nodes tested.</p>
+			<div class="image">
+				<img src="./bin/Images/Validation-testing.png" id="validation-results" alt="Intuitive Auto Irrigation Testing Results"></img>
+				<h4 class="caption" id="validation-results-caption">The validation results highlight measured environmental trends for two distinct nodes. The trial was performed over 5 days and shows the efficacy of the Intuitive Auto Irrigation system.</h4>
+			</div>
 		</div>
 	</div>
 

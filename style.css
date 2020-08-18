@@ -82,6 +82,9 @@ header ul {
 	width: 500px;
 	grid-column: span 1;
 	border: 1px solid white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Projects */
@@ -114,8 +117,12 @@ header ul {
 	text-align: center;
 }
 
-#IAI-report, #arduino {
+.projects .link {
 	color: white;
+}
+
+.link:hover {
+	color: black;
 }
 
 .caption {
@@ -125,15 +132,31 @@ header ul {
 	margin-top: 12px;
 }
 
-#central-hub {
-	width: 350px;
-	border: 1px solid white;
-	margin-top: 20px;
-	margin-left: 385px;
-}
-
 .projects .image {
 	border: 1px solid white;
 	padding-bottom: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.projects img {
+	border: 1px solid white;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#central-hub {
+	width: 350px;
+	margin-top: 10px;
+}
+
+#sensor-array {
+	width: 550px;
+	margin-top: 20px;
+}
+
+#validation-results {
+	width: 90%;
+	margin: 20px;
 }
