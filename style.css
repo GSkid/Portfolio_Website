@@ -1,9 +1,11 @@
 body {
 	background-color: #0C7DAE;
+	background-image: linear-gradient(#0C7DAE, #084964, #2C2175, #26084E, #110323, #0E0B23);
 	color: #FFF;
 	margin: 0 auto;
-	
 	z-index: 1;
+	height: 100%;
+	padding-bottom: 155px;
 }
 
 /* HEADER */
@@ -88,7 +90,7 @@ header ul {
 }
 
 /* Projects */
-#projects {
+.label {
 	position: relative;
 	top: 225px;
 	margin-bottom: 200px;
@@ -102,14 +104,15 @@ header ul {
 	min-width: 600px;
 }
 
-.projects h1 {
+.section-header {
 	text-align: center;
 	margin-top: 120px;
+	margin-bottom: 40px;
 	color: white;
 }
 
-.projects h2 {
-	margin-top: 40px;
+.section-sub-header {
+	font-size: 30px;
 }
 
 .projects p {
@@ -159,4 +162,96 @@ header ul {
 #validation-results {
 	width: 90%;
 	margin: 20px;
+}
+
+/* ONLINE RESUME */
+.resume {
+	position: relative;
+	top: 225px;
+	margin: 0 auto;
+	width: 50%;
+	min-width: 600px;
+}
+
+.resume h2 {
+	text-align: start;
+	margin-bottom: 30px;
+}
+
+#skill-grid {
+	border: 1px solid white;
+	list-style-type: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.skill-header {
+	margin-right: 40px;
+	font-size: 30px;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.prog-lang, .comp-skill, .other-skill, .exp-header {
+	margin-right: 40px;
+	font-size: 24px;
+}
+
+#experience {
+	margin-top: 125px;
+}
+
+.exp-header {
+	margin-top: 20px;
+}
+
+.exp-header, .duration {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.exp-description {
+	width: 80%;
+}
+
+.exp-item {
+	font-size: 18px;
+}
+
+#education h2 {
+	margin-top: 80px;
+}
+
+.edu-container {
+	margin-left: 40px;
+}
+
+/* FOOTER */
+footer {
+	text-align: center;
+	position: relative;
+	top: 300px;
+	margin: 0 auto;
+}
+
+footer ul {
+	list-style-type: none;	
+}
+
+#footer-links {
+	display: inline-block;
+	font-size: 24px;
+}
+
+#footer-links .link {
+	color: #FFF;
+}
+
+#footer-links .link:hover {
+	color: #000;
 }
